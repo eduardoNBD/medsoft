@@ -12,7 +12,11 @@ class Controller extends BaseController{
     
     public function __construct()
     { 
-        require getcwd()."/config/menu.php"; 
+        if(file_exists(getcwd()."/config/routes.php")){
+            $routes = require getcwd()."/config/routes.php"; 
+        } else {
+            $r$routes = "/config/routes.php"; 
+        } 
 
         view()->share('_', [
             'menu' => $menu,  
