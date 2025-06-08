@@ -1,0 +1,5 @@
+php artisan queue:work --stop-when-empty  
+php artisan google:refresh-channels
+php artisan encounters:autoGenerate
+
+* * * * * php /path-to-your-project/artisan schedule:run >> /dev/null 2>&1

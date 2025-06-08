@@ -1,0 +1,1 @@
+input[type="color"]{width:25px;height:25px;border-radius:50%;box-shadow: 0px 0px 0px 2px #000000;overflow: hidden;}.dark input[type="color"]{box-shadow: 0px 0px 0px 2px #ffffff;}input[type="color"]::-webkit-color-swatch-wrapper {padding: 0;}input[type="color"]::-webkit-color-swatch {border: none;}

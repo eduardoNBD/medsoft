@@ -1,0 +1,1 @@
+//const eventSource = new EventSource(baseURL + "/notifications/stream");
