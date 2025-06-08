@@ -13,9 +13,9 @@ class Controller extends BaseController{
     public function __construct()
     { 
         if(file_exists(getcwd()."/config/routes.php")){
-            $routes = require getcwd()."/config/routes.php"; 
+            require getcwd()."/config/routes.php"; 
         } else {
-            $routes = "/config/routes.php"; 
+            require "/config/routes.php"; 
         } 
 
         view()->share('_', [
