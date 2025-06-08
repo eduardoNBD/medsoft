@@ -15,7 +15,7 @@ class Controller extends BaseController{
         if(file_exists(getcwd()."/config/routes.php")){
             $routes = require getcwd()."/config/routes.php"; 
         } else {
-            $r$routes = "/config/routes.php"; 
+            $routes = "/config/routes.php"; 
         } 
 
         view()->share('_', [
